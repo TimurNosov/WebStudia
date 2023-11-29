@@ -1,0 +1,487 @@
+
+:root {
+  --accent-color: #2196f3;
+  --basic-color: #757575;
+  --minor-color: #212121;
+  --bg-color: #2f303a;
+  --footer-ct: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: "Roboto", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0px;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header */
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.header > .conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--accent-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+
+.header-style {
+  color: #000;
+}
+
+.header-style:hover,
+.header-style:focus {
+  color: var(--accent-color);
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-list > .item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.header-menu {
+  color: var(--minor-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+.header-menu:hover,
+.header-menu:focus {
+  color: var(--accent-color);
+}
+
+.header-ct-list {
+  display: flex;
+}
+
+.header-ct-list > .item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.header-ct {
+  color: var(--basic-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+.header-ct:hover,
+.header-ct:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero {
+  background-color: var(--bg-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-title {
+  color: #fff;
+  text-align: center;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
+
+  margin-bottom: 30px;
+
+  width: 696px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-btn {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 10px 32px 10px 32px;
+  border: none;
+
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.96px;
+
+  border-radius: 4px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* Наші переваги */
+.advantage {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.advantage-list {
+  padding-left: 0px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.advantage-list > .item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.advantage-title {
+  color: var(--minor-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+
+.advantage-text {
+  color: var(--basic-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}
+
+/* псевдоелементи */
+.advantage-list > .item:nth-child(1)::before {
+  content: " ";
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 55px 100px;
+  min-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/antenna.png);
+
+  width: 70px;
+  height: 70px;
+  display: block;
+}
+
+.advantage-list > .item:nth-child(2)::before {
+  content: " ";
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 55px 100px;
+  min-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/clock.png);
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  display: block;
+}
+
+
+.advantage-list > .item:nth-child(3)::before {
+  content: " ";
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 55px 100px;
+  min-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/diagram.png);
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  display: block;
+}
+
+.advantage-list > .item:nth-child(4)::before {
+  content: " ";
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 55px 100px;
+  min-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/astronaut.png);
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  display: block;
+}
+
+/* Чим ми займаємося */
+.our-work {
+  padding-bottom: 94px;
+}
+
+.our-work-title {
+  color: var(--minor-color);
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+
+  margin-bottom: 50px;
+}
+
+.our-work-list {
+  padding-left: 0px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.our-work-list > .item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+/* Наша команда */
+.team {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-title {
+  color: var(--minor-color);
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.team-list > .item {
+  flex-basis: calc((100% - 90px) 4);
+}
+
+.team-name {
+  color: var(--minor-color);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+
+  margin-top: 30px;
+}
+
+.team-text {
+  color: var(--basic-color);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+
+  margin-top: 10px;
+}
+
+/* Портфоліо */
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.portfolio-list-btn {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+  padding-left: 0px;
+}
+
+/* .portfolio-list-btn > .item:not(:first-child){
+ margin-left: 8px; 
+} */
+
+.portfolio-btn {
+  color: var(--minor-color);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.48px;
+  border: none;
+
+  cursor: pointer;
+
+  border-radius: 4px;
+  background-color: #f5f4fa;
+
+  padding: 6px 22px;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: #fff;
+  background-color: #2196f3;
+}
+
+/* Проекти */
+.portfolio-list-projeckt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 30px;
+  padding-left: 0px;
+}
+
+.portfolio-list-projeckt > .item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.portfolio-title {
+  color: var(--minor-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 1.08px;
+}
+
+.portfolio-text {
+  color: var(--basic-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.48px;
+}
+
+/* footer */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--bg-color);
+}
+
+.footer-logo {
+  color: #fff;
+}
+
+.footer-addr {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}
+
+.footer-ctn {
+  color: var(--footer-ct);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}
+
+address {
+  display: flex;
+  flex-direction: column;
+}
+
+/*  */
+.go-top {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  display: none;
+}
+
+.go-top-show {
+  display: block;
+}
